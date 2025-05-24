@@ -1,24 +1,78 @@
-.main-container {
+.container {
+  display: flex;
+  justify-content: center;
   background-color: #ffc2a0;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.inner-container {
+  width: 85%;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.heading {
+  font-size: 30px;
+  font-family: 'Roboto';
+  color: #ff8542;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.todos-list {
+  padding-left: 0px;
+  list-style-type: none;
   display: flex;
   flex-direction: column;
+}
+
+.add-todo {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 30px;
+  margin-bottom: 45px;
 }
 
-.card-container {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 30px;
+.input-box {
+  height: 40px;
+  font-family: Roboto;
+  color: #33001a;
+  font-size: 14px;
+  outline: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 2px solid #c2c2d6;
+  padding-left: 10px;
+  width: 350px;
 }
 
-.todo-heading {
-  font-family: 'Roboto';
-  text-align: center;
-  color: #ff8542;
+.todo-input-count {
+  height: 40px;
+  padding-right: 15px;
+  margin-right: 10px;
+  color: #33001a;
+  outline: none;
+  padding-left: 15px;
+  width: 80px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 2px solid #c2c2d6;
+  border-left: 0px;
 }
 
-.unordered-list-container {
-  padding-left: 0px;
+.add-button {
+  background-image: radial-gradient(at left top, #ffb3ff, #ff80b3, #ff8080);
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: Roboto;
+  color: #e6ffff;
+  font-size: 15px;
 }

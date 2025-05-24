@@ -1,27 +1,85 @@
-.todo-item-container {
+.todo-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: antiquewhite;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 72px;
 }
 
-.todo {
-  font-family: 'Roboto';
+.row-fix-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox-input {
+  width: 17px;
+  height: 17px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.title-todo {
   color: #000000;
-  font-style: normal;
-  width: 80%;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Roboto';
 }
 
 .delete-button {
-  border: solid 1px #ff0b37;
-  border-radius: 8px;
+  font-family: Roboto;
+  background-color: transparent;
   color: #ff0b37;
-  background-color: #ffffff;
-  padding: 6px;
-  width: 60px;
-  font-family: 'Roboto';
-  font-weight: 500;
+  border: 1px solid #ff0b37;
+  height: 30px;
   font-size: 13px;
+  width: 75px;
+  border-radius: 5px;
+  margin-left: 15px;
   cursor: pointer;
+}
+
+.edit-button {
+  font-family: Roboto;
+  background-color: #b366ff;
+  color: #fff;
+  border: none;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 75px;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.editing-todo {
+  border: 2px solid #a3a3c2;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 10px;
+  margin-right: 15px;
   outline: none;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.save-button {
+  font-family: Roboto;
+  background-color: #5cd65c;
+  color: #fff;
+  border: none;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 75px;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.strike-down {
+  text-decoration: line-through;
 }
